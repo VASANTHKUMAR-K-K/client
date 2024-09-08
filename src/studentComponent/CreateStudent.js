@@ -47,15 +47,12 @@ export default function CreateStudent() {
 
      axios.post("http://localhost:8000/api/stu/create", formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
-      
     })
-      .then(values => {
-        //  console.log(res)
+      .then(res => {
+         console.log(res)
         navigate('/student');
       })
       .catch(err => console.log(err,"ooooo"),
-      navigate('/student')
-
     );
   };
 

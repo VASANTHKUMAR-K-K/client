@@ -6,6 +6,8 @@ import CreateStudent from './studentComponent/CreateStudent';
 import Student from './studentComponent/Student'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UpdateStudent from './studentComponent/UpdateStudent';
+import Home from './components/Home'
+
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
         
         <Router>
           <Routes>
-            <Route path='/' />
+            <Route path='/home' element={<Home />} />
             <Route path='/signin' element={<Signin />} />
             <Route path='/signup' element={<Register />} />
             <Route path='/student' element={<Student />} />

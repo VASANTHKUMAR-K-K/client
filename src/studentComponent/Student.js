@@ -104,7 +104,8 @@ export default function Student() {
               <tr key={i}>
                 <td>{data.name}</td>
                 {/* <td>{data.image}</td> */}
-                <td><a style={{textDecoration:"none"}} href={`http://localhost:8000/${data.image}`} target="_blank">Image</a></td>
+                <td><a style={{textDecoration:"none"}} href={`http://localhost:8000/${data.image}`} target="_blank"
+                rel="noopener noreferrer">Image</a></td>
                 <td>{data.contact}</td>
                 <td>{data.email}</td>
                 <td>{data.state}</td>

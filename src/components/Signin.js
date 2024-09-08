@@ -20,7 +20,7 @@ export default function Singin() {
       localStorage.setItem('authToken', token);
       if(res.data.message ==='Login Successfully'){
         alert("login Successfully")
-        navigate('/student')
+        navigate('/home')
       }
     })
     .catch(err=>{
@@ -61,10 +61,10 @@ export default function Singin() {
             Login
           </button>
         </form>
-        <p>Already Have an Account</p>
+        {/* <p>Already Have an Account</p>
         <Link to="/signup" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
           Sign Up
-        </Link>
+        </Link> */}
 
       </div>
     </div></>
